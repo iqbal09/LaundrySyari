@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+
+
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_username"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:hint="Username"
+                android:id="@+id/loginUsername" />
+
+        </LinearLayout>
+
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_password"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:hint="Password"
+                android:password="true"
+                android:id="@+id/loginPassword" />
+
+        </LinearLayout>
+
+
+        <!--  Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Login" />
+
+        <!--  Link to Registration Screen -->
+        <Button
+            android:id="@+id/btnLinkToRegisterScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Tidak punya akun..?  Registrasi"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+
+        <!--  Login Button -->
+        <TextView
+            android:id="@+id/login_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <fragment
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/maps"
+            tools:layout="@layout/picker_place" />
+
+    <!-- Child linear layout with horizontal orientation -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dip">
+
+        <AutoCompleteTextView
+            android:id="@+id/av1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ketikkan Nama Lokasi"
+            android:background="#ffffff"
+            android:padding="15dip"
+            android:layout_weight="1"
+            android:gravity="left"/>
+
+        <ImageView
+            android:id="@+id/btn_cari_lokasi_jemput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dip"
+            android:background="#2a2a2a"
+            android:src="@drawable/places_ic_search"
+            android:layout_weight="5"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Lokasi"
+            android:id="@+id/PilihLokasi"
+            android:layout_alignParentBottom="true" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="laundry.syari.medan">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplashScreen" />
+
+        <activity
+            android:name=".OrderNow"
+            android:label="Order Now" />
+
+        <activity
+            android:name=".OrderNowEdit"
+            android:label="Ubah Data Order" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="Order Now" />
+
+        <activity
+            android:name=".Dashboard"
+            android:label="Laudry Syari" />
+        <activity
+            android:name=".EstimasiBerat"
+            android:label="Estimasi Berat" />
+        <activity
+            android:name=".OrderBerhasil"
+            android:label="Order Berhasil" />
+        <activity
+            android:name=".TOS"
+            android:label="Term of Condition" />
+        <activity
+            android:name=".About"
+            android:label="About Us" />
+        <activity
+            android:name=".Pathership"
+            android:label="Partnership" />
+        <activity
+            android:name=".Pricing"
+            android:label="Pricing" />
+        <activity
+            android:name=".WhatNews"
+            android:label="What News" />
+        <activity
+            android:name=".Profil"
+            android:label="Profil" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login Aplikasi Laundry" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register Aplikasi Laundry" />
+        <activity
+            android:name=".Cari_Lokasi"
+            android:label="Cari Lokasi" />
+        <activity
+            android:name=".PickerPlace"
+            android:label="Piih Lokasi" />
+
+        <activity
+            android:name=".OrderStatus"
+            android:label="Order Status" />
+
+        <activity
+            android:name=".OrderHistory"
+            android:label="Order History" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest>

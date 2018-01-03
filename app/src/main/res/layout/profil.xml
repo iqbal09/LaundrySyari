@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/TextView04"
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_people"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:hint="Nama Kamu "
+                android:id="@+id/profilName"
+                android:focusable="true"
+                />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_email"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:hint="Email Kamu "
+                android:id="@+id/profilEmail" />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_telp"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="phone"
+                android:digits="0123456789+"
+                android:textAlignment="center"
+                android:hint="Nomor Handphone "
+                android:id="@+id/profilHandphone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:src="@drawable/btn_simpan_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/btn_simpan_profil" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

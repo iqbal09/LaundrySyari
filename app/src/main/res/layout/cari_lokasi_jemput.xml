@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Child linear layout with horizontal orientation -->
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dip">
+
+        <EditText
+            android:id="@+id/txt_cari_lokasi_jemput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: pajak sambu"
+            android:background="#ffffff"
+            android:padding="15dip"
+            android:layout_weight="1"
+            android:gravity="left"/>
+
+        <ImageView
+            android:id="@+id/btn_cari_lokasi_jemput"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dip"
+            android:background="#2a2a2a"
+            android:src="@drawable/places_ic_search"
+            android:layout_weight="5"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_lokasi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:dividerHeight="10dp"
+        android:divider="@android:color/transparent"
+        android:cacheColorHint="#ffffff"></ListView>
+
+
+</LinearLayout>

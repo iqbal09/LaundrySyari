@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Child linear layout with horizontal orientation -->
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnTanggal"
+                    android:background="@color/colorButton"
+                    android:layout_width="fill_parent"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btnJam"
+                    android:textColor="#fff"
+                    android:background="@color/colorButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jam"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/lokasianda"
+                android:background="@color/colorButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Lokasi Dari Peta"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Lokasi"
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:id="@+id/ed_detail_lokasi"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Posisi Sekarang"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_margin="10dp" />
+
+            <Spinner
+                android:id="@+id/spinner_info_tambahan"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:entries="@array/posisi_arrays"
+                android:prompt="@string/posisi_prompt"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:background="@color/colorAccent"
+                android:text="Next"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+</LinearLayout>

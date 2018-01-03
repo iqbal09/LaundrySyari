@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#fff">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_alignParentTop="true"
+    android:background="#fff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/tvhome"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Home"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/logo_laundry"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#55D46A"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="#55D46A"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_order_now"
+                android:background="#fff"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/order_now"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/img_order_status"
+                android:background="#fff"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/order_status"
+                />
+
+            <ImageView
+                android:id="@+id/img_order_history"
+                android:background="#fff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/order_history"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#55D46A"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="#55D46A"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            >
+
+            <ImageView
+                android:background="#fff"
+                android:id="@+id/img_profil"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/profil"
+                android:gravity="center"/>
+            <ImageView
+                android:background="#fff"
+                android:id="@+id/img_what_news"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/what_new"
+                />
+
+            <ImageView
+                android:background="#fff"
+                android:id="@+id/img_pricing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/pricing"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#55D46A"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="#55D46A"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+
+            <ImageView
+                android:id="@+id/img_about"
+                android:background="#fff"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/about_us"/>
+            <ImageView
+                android:id="@+id/img_partnership"
+                android:background="#fff"
+                android:layout_marginRight="3dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/partnership"/>
+            <ImageView
+                android:id="@+id/img_tos"
+                android:background="#fff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/tos"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#55D46A"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+
+        <ImageView
+            android:id="@+id/img_bantuan"
+            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bantuan"/>
+
+        <TextView
+            android:padding="20dp"
+            android:textStyle="bold|italic"
+            android:textColor="#55D46A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="Kini Mencuci Secara Online pun Bisa!"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="30dp"
+            />
+    </LinearLayout>
+</ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_alignParentBottom="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/banner_home_footer"
+        ads:adSize="BANNER"/>
+
+
+
+
+
+</RelativeLayout>

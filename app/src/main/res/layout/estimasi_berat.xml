@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#fff">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/adView"
+        android:background="#fff">
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="Perkiraan Berat Dalam Kilogram (kg)"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Child linear layout with horizontal orientation -->
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnKurang"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtJumlah"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <Button
+                    android:id="@+id/btnTambah"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:padding="15dp"
+                    android:layout_margin="10dp"
+
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtHarga"
+                android:textStyle="bold|italic"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Rp. 0"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/txtKeterangan"
+                android:textStyle="bold|italic"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+            <!-- Child linear layout with horizontal orientation -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/ubah"
+                android:gravity="center">
+                <ImageView
+                    android:src="@drawable/ic_edit"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"/>
+                <TextView
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah Orderan"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+
+                android:layout_margin="20dp"
+                android:background="@color/colorAccent"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+      </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

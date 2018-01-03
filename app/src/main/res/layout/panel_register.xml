@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_username"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:textAlignment="center"
+                android:inputType="textCapSentences"
+                android:hint="Username"
+                android:id="@+id/registerUsername" />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_password"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:textAlignment="center"
+                android:hint="Password"
+                android:password="true"
+                android:id="@+id/registerPassword" />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/TextView04"
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_people"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:hint="Nama"
+                android:id="@+id/registerName" />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_email"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="textEmailAddress"
+                android:textAlignment="center"
+                android:hint="Email"
+                android:id="@+id/registerEmail" />
+
+        </LinearLayout>
+
+        <!-- Child linear layout with horizontal orientation -->
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/profil_telp"
+                />
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:textStyle="italic"
+                android:layout_weight="8"
+                android:inputType="phone"
+                android:digits="0123456789+"
+                android:textAlignment="center"
+                android:hint="Nomor Handphone "
+                android:id="@+id/registerPhone" />
+
+        </LinearLayout>
+
+
+
+
+        <!--  Login Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Register" />
+
+        <!--  Link to Login Screen -->
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Kamu Sudah Mendaftar? , login disni"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

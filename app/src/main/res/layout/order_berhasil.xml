@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <com.google.android.gms.ads.AdView
+        android:layout_alignParentTop="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/banner_home_footer"
+        ads:adSize="BANNER"/>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+            <!-- Parent linear layout with vertical orientation -->
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff">
+
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ORDER SUDAH DI BUAT"
+                        android:textStyle="bold"
+                        android:textColor="#0098DA"
+                        android:padding="15dip"
+                        android:textSize="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pesanan anda sedang kami proses \n kurir kami akan segera menghubungi anda"
+
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#ffffff">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/imageView1"
+                        android:src="@drawable/ceklist"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#ffffff">
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/berhasil"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tglSelesai"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Selesai : "
+                        android:textStyle="bold"
+                        android:padding="15dip"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="#ffffff">
+
+                    <ImageView
+
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@drawable/garis_batas"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="1dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order ID"
+                        android:textStyle="bold"
+                        android:padding="5dip"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+
+
+
+
+                </LinearLayout>
+
+                <!-- Child linear layout with horizontal orientation -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="10dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tampilIdOrder"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="5dip"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/backHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_margin="10dp"
+                    android:background="#0098DA"
+                    android:text="Home"/>
+
+
+            </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
