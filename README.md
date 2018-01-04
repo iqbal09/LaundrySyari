@@ -4,8 +4,8 @@ Laundry sharia or call it the laundry is basically the same with other laundry s
 
 
 <p align="center">
-  <img src="screenshot/1.jpg" height="500" alt="" />
-  <img src="screenshot/2.jpg" height="500" alt="" />
+  <img src="screenshot/desain/1.jpg" height="500" alt="" />
+  <img src="screenshot/desain/2.jpg" height="500" alt="" />
 </p>
 
 # Which JDK version is needed?
